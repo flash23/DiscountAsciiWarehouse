@@ -7,7 +7,8 @@ import asciiwarehouse.com.discountasciiwarehouse.IOService.MODEL.WarehouseItemMo
 /**
  * Created by mirkomesner on 11/22/15.
  */
-public class SearchApiDoneJob {
+//we are
+public class SearchApiDoneJob extends GenericDoneJob {
 
     public boolean succes = false;
     public List<WarehouseItemModel> warehouseItemModelList = null;

@@ -23,7 +23,7 @@
         android:layout_alignParentRight="true"
         />
 
-    <EditText
+    <asciiwarehouse.com.discountasciiwarehouse.Utils.EditTextBackEvent
         android:id="@+id/searchfield"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,7 +32,5 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@id/inStockCheckBox"
-        >
-
-    </EditText>
+        />
 </RelativeLayout>

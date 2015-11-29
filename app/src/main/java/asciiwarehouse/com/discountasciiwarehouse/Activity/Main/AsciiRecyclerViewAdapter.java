@@ -188,11 +188,15 @@ public class AsciiRecyclerViewAdapter extends RecyclerView.Adapter<SearchResultV
     @Override
     public void onBindViewHolder(SearchResultView holder, int position) {
         holder.itemFace.setText(items.get(position).face);
-        holder.itemPrice.setText(items.get(position).price+"");
+        holder.itemPrice.setText(items.get(position).price + "");
         holder.itemInStock.setText(items.get(position).stock + "");
 
         holder.loadingRL.setAlpha(0.0f);//we recycle so always turnoff loading
         if(itemLoading == position) {
+            if(holder.itemView.getWidth()>0 && holder.itemView.getHeight()>0) {
+                holder.loadingRL.setWidth(holder.itemView.getWidth());
+                holder.loadingRL.setHeight(holder.itemView.getHeight());
+            }
 //            AlphaAnimation anim = new AlphaAnimation(0.0f,1.0f);
 //            anim.setFillAfter(true);
 //            anim.setDuration(1000);

@@ -3,5 +3,5 @@ package asciiwarehouse.com.discountasciiwarehouse.IOService.DoneJobs;
 /**
  * Created by mirkomesner on 11/22/15.
  */
-public class ServiceErrorStop {
+public class ServiceErrorStop  extends GenericDoneJob {
 }

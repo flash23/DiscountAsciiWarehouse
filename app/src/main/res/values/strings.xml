@@ -2,4 +2,10 @@
     <string name="app_name">DiscountAsciiWarehouse</string>
     <string name="ascii_warehouse">Ascii Warehouse</string>
     <string name="ascii_splash">[• °]</string>
+    <string name="loading">Loading...</string>
+    <string name="buy">BUY NOW!</string>
+    <string name="price">Price</string>
+    <string name="stock">Price</string>
+    <string name="onlyoneinstock">(Only 1 more in stock!)</string>
+    <string name="outofstock">(Out of stock.)</string>
 </resources>

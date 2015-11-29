@@ -1,118 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    card_view:cardUseCompatPadding="true"
-    card_view:cardElevation="2dp"
     card_view:cardCornerRadius="3dp"
-    >
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
 
 
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    >
-
-    <TextView
-        android:id="@+id/item_face"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@android:color/black"
-        android:text="(._.)"
+        android:layout_gravity="center">
 
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        />
-    <TextView
-        android:layout_below="@id/item_face"
-        android:id="@+id/item_price_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
+        <TextView
+            android:id="@+id/item_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="16dp"
+            android:text="(._.)"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
 
-        android:textColor="@android:color/black"
-        android:text="Price: "
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_face"
 
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="4dp"
+            android:orientation="vertical">
 
-        />
-    <TextView
-        android:layout_below="@id/item_face"
-        android:layout_toRightOf="@id/item_price_label"
-        android:id="@+id/item_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
 
-        android:textColor="@android:color/darker_gray"
-        android:text="333"
+                <TextView
 
-        android:layout_alignParentRight="true"
-        android:gravity="right"
-        android:paddingRight="4dp"
-        />
+                    android:id="@+id/item_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="Price: "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
 
-    <TextView
-        android:layout_below="@id/item_price_label"
-        android:id="@+id/item_instock_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/item_price_label"
+                    android:gravity="right"
+                    android:paddingRight="4dp"
+                    android:text="333"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
 
-        android:textColor="@android:color/black"
-        android:text="In Stock: "
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
 
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="4dp"
-        />
+                <TextView
+                    android:id="@+id/item_instock_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="In Stock: "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
 
-    <TextView
-        android:layout_below="@id/item_price_label"
-        android:layout_toRightOf="@id/item_instock_label"
-        android:id="@+id/item_instock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
+                <TextView
+                    android:id="@+id/item_instock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/item_instock_label"
+                    android:gravity="right"
+                    android:paddingRight="4dp"
+                    android:text="333"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
 
-        android:textColor="@android:color/darker_gray"
-        android:text="333"
+        </LinearLayout>
 
-        android:layout_alignParentRight="true"
-        android:gravity="right"
-        android:paddingRight="4dp"
-
-        />
-
-
-    <TextView
-        android:id="@+id/loading"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:textSize="22sp"
-        android:background="#99ff0000"
-        android:textColor="@android:color/black"
-        android:text="Loading..."
-        android:gravity="center"
-        
-
-
-        />
-</RelativeLayout>
-
-
-
-
+        <asciiwarehouse.com.discountasciiwarehouse.Utils.FontFitTextView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#Efffffff"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
 
 </android.support.v7.widget.CardView>

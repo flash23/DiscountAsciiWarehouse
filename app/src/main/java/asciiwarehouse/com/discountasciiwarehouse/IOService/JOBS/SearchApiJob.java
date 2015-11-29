@@ -3,6 +3,8 @@ package asciiwarehouse.com.discountasciiwarehouse.IOService.JOBS;
 /**
  * Created by mirkomesner on 11/20/15.
  */
+
+//we are teling to service that we want api search request
 public class SearchApiJob extends GenericJob{
 
     public SearchApiJob(Integer skip,Integer limit,String q,Boolean onlyInStock, Boolean reload)

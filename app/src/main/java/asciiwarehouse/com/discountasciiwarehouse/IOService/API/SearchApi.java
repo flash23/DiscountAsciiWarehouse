@@ -9,7 +9,7 @@ import retrofit.http.Query;
 /**
  * Created by mirkomesner on 11/20/15.
  */
-
+//siple code using interface :)
 public interface SearchApi {
     @GET("/search")
     public void getShopItems(

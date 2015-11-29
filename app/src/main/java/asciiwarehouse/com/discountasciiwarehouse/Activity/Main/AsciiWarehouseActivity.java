@@ -193,4 +193,11 @@ public class AsciiWarehouseActivity extends AppCompatActivity {
             recyclerViewAdapter.notifyDataSetChanged();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+        search.clearFocus();
+        super.onBackPressed();
+    }
 }
