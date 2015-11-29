@@ -15,7 +15,7 @@ public class SplashActivity extends Activity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_splash);
-        
+
         EventBus.getDefault().register(this);
     }
 

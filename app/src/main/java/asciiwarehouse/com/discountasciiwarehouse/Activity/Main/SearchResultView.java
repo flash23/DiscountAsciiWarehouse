@@ -8,6 +8,7 @@ import asciiwarehouse.com.discountasciiwarehouse.R;
 /**
  * Created by mirkomesner on 11/23/15.
  */
+//cell of RecycleView
 public class SearchResultView extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     public TextView itemFace;

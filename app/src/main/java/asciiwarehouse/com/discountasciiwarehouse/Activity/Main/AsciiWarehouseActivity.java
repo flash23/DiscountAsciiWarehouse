@@ -21,6 +21,7 @@ import android.widget.TextView;
 import asciiwarehouse.com.discountasciiwarehouse.R;
 import de.greenrobot.event.EventBus;
 
+//Main acitivity of the app
 public class AsciiWarehouseActivity extends AppCompatActivity {
 
     public SwipeRefreshLayout refresher;

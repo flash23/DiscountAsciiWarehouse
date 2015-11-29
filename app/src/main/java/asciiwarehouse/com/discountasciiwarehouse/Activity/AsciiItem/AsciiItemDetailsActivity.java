@@ -55,7 +55,7 @@ public class AsciiItemDetailsActivity extends Activity{
     private void populateUI()
     {
         itemFace.setText(item.face);
-        itemPrice.setText(item.price+"");
+        itemPrice.setText("$"+item.price);
 
         itemOnlyOne.setVisibility(item.stock <= 1 ? View.VISIBLE : View.INVISIBLE);
         itemOnlyOne.setText(getResources().getString(item.stock == 1 ? R.string.onlyoneinstock : R.string.outofstock));
