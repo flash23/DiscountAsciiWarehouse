@@ -25,8 +25,11 @@ public class AsciiApplication extends Application implements Application.Activit
     //We want to control activities and services life from one place application
 
     private static Context mContext;
+    private static Activity currentAtivity;
 
-    private Activity currentAtivity;
+    public static Activity getCurrentAtivity(){
+        return currentAtivity;
+    }
 
     public static Context getContext(){
         return mContext;

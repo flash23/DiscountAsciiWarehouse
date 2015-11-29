@@ -2,6 +2,7 @@ package asciiwarehouse.com.discountasciiwarehouse.IOService.API;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;
@@ -10,6 +11,7 @@ import java.io.File;
 
 import asciiwarehouse.com.discountasciiwarehouse.Application.AsciiApplication;
 import asciiwarehouse.com.discountasciiwarehouse.IOService.MODEL.CustomConverterNDJSON;
+import asciiwarehouse.com.discountasciiwarehouse.R;
 import asciiwarehouse.com.discountasciiwarehouse.Utils.NetworkUtil;
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
@@ -62,7 +64,15 @@ public class Api {
                     request.addHeader("Cache-Control", "public, max-age=" + maxAge);
                 } else {
                     int maxStale = 60 * 60;//1 hour cash!!!!!!!!!!!!!!!!!!!!!!!!
-                    request.addHeader("Cache-Control","public, only-if-cached, max-stale=" + maxStale);
+                    request.addHeader("Cache-Control", "public, only-if-cached, max-stale=" + maxStale);
+                    if(AsciiApplication.getCurrentAtivity()!=null)
+                    AsciiApplication.getCurrentAtivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(AsciiApplication.getContext(), AsciiApplication.getContext().getResources().getString(R.string.readingcash), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
                 }
             }
         };

@@ -8,4 +8,5 @@
     <string name="stock">Price</string>
     <string name="onlyoneinstock">(Only 1 more in stock!)</string>
     <string name="outofstock">(Out of stock.)</string>
+    <string name="readingcash">Reading from cache.</string>
 </resources>
